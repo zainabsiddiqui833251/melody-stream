@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- aos css link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- adsense code -->
+    <meta name="google-adsense-account" content="ca-pub-2419307412160152">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2419307412160152"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+MX:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="logo">
+            <h1><i class="fa-solid fa-music"></i> Melody Stream <i class="fa-solid fa-music"></i></h1>
+        </div>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search for songs...">
+            <button id="search-button">Search</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <h1 style="font-family:  Roboto, sans-serif; font-weight: 500; font-style: normal;">Songs</h1>
+            <ul class="song-list">
+                <li class="song-item" data-audio="audio\dakside.mp3">
+                    <img src="./img/darkside alanwalker.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">dark side</h3>
+                        <p class="song-artist">alan walker feat.au/ra & tomine harket </p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\ignite.mp3">
+                    <img src="./img/ignite.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">ignite</h3>
+                        <p class="song-artist">alan walker feat.julie bergan & seungri</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\let me down.mp3">
+                    <img src="./img/let me down.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">let me down slowly</h3>
+                        <p class="song-artist">alec benjamin</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\love is gone.mp3">
+                    <img src="./img/love is gone'.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">love is gone</h3>
+                        <p class="song-artist">slander ft.dylan matthew</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\infinity.mp3">
+                    <img src="./img/infinity.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">infinity</h3>
+                        <p class="song-artist">james young</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\love me like you do.mp3">
+                    <img src="./img/love me like you do.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">love me like you do</h3>
+                        <p class="song-artist">Ellie Goulding</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\on my way.mp3">
+                    <img src="./img/on my way.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title"> On My Way</h3>
+                        <p class="song-artist">Alan Walker, Sabrina Carpenter & Farruko</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\perfect.mp3">
+                    <img src="./img/perfect.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">perfect</h3>
+                        <p class="song-artist">Ed Sheeran</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\shape of you.mp3">
+                    <img src="./img/shape of you.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">shape of you</h3>
+                        <p class="song-artist">Ed Sheeran</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\we dont talk anymore.mp3">
+                    <img src="./img/we dont talk anymore.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">we dont talk anymore</h3>
+                        <p class="song-artist">Charlie Puth Feat. Selena Gomez</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\haan tu hai.mp3">
+                    <img src="./img/haan tu hai.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">haan tu hai</h3>
+                        <p class="song-artist"> KK | Pritam | Sayeed Quadri</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\kaisa yeh raaz hai.mp3">
+                    <img src="./img/kaisa yeh raaz hai.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">kaisa yeh raaz hai </h3>
+                        <p class="song-artist">KK|Pranay M. Rijia</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\dil sambhal ja zara.mp3">
+                    <img src="./img/dil sambhal ja zara.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">dil sambhal ja zara</h3>
+                        <p class="song-artist">Arijit Singh | Mohd Irfan - Salim
+                        </p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\aye khuda.mp3">
+                    <img src="./img/aye khuda.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">aye khuda</h3>
+                        <p class="song-artist">Saim Bhat, Kshitij Tarey, Mithoon</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\sunn zara.mp3">
+                    <img src="./img/sunn zara.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">sunn zara</h3>
+                        <p class="song-artist">JalRaj</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\dil ibadat.mp3">
+                    <img src="./img/dil iibadat.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">dil ibadat</h3>
+                        <p class="song-artist">K.K | Pritam Chakraborty | Sayeed Quadri</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\to phir aao.mp3">
+                    <img src="./img/toh phir aao.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">toh phir aao</h3>
+                        <p class="song-artist"> Mustafa Zahid</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\main woh chaand.mp3">
+                    <img src="./img/main woh chaand.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">main woh chaand</h3>
+                        <p class="song-artist"> Darshan Raval, Himesh Reshammiya</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\teri yaadon mein.mp3">
+                    <img src="./img/teri yaadon mein.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">teri yaadon mein</h3>
+                        <p class="song-artist">Shreya Ghoshal, KK</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+                <li class="song-item" data-audio="audio\bewajah.mp3">
+                    <img src="./img/bewajah.jpeg" alt="Song Image" class="song-img">
+                    <div class="song-info">
+                        <h3 class="song-title">bewajah</h3>
+                        <p class="song-artist">Himesh Reshammiya</p>
+                    </div>
+                    <button class="play-pause"><i class="fa-solid fa-circle-play"></i></button>
+                </li>
+
+                <!-- Additional songs -->
+            </ul>
+        </div>
+        <div class="main-content"
+            style="background-image: url('./img/header.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100%;  -webkit-backdrop-filter: blur(50px);backdrop-filter: blur(50px);    ">
+            <!-- <div class="image-section"
+                    style="background-image: url('./img/header.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100%;">
+                </div> -->
+            <div class="player-section">
+                <img src="default-song.jpg" alt="Song Image" class="current-song-img">
+                <div class="current-song-info">
+                    <h3 class="current-song-title">Default Song</h3>
+                    <p class="current-song-artist">Default Artist</p>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="player-controls">
+                    <button class="previous"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="backward"><i class="fa-solid fa-backward-fast"></i></button>
+                    <button class="play-pause-main"><i class="fa-solid fa-circle-play"></i></button>
+                    <button class="forward"><i class="fa-solid fa-forward-fast"></i></button>
+                    <button class="next"><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+                <audio id="audio-player"></audio> <!-- Default song here -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
